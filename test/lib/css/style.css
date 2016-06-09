@@ -285,7 +285,7 @@ a{
 /************************************************/
 #game_container{
     width: 1000px;
-    margin: 80px auto;
+    margin: 0px auto;
     position: relative;
 }
 
