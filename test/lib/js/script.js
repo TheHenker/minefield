@@ -709,7 +709,7 @@ function startNewGame(){
 
         boardHtml = $("#board").html();
         $("#board").html("");
-        for(var i=0; i<25; i++){
+        for(var i=1; i<=25; i++){
             $("#board").append("<li data-tile='"+i+"' class='tile'></li>");
         }
 
