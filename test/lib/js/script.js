@@ -219,9 +219,9 @@ $(function(){
                     if(json.length > 0){
                         $.each(json.reverse(), function(index){
                             if(json[index].profit <= 0){
-                                $('#highRoller_logs').html("<div class=\"hr_log_item\" style=\"border-left: 4px solid #E74C3C;\"><b><a class=\"hr_log_item_username\" href=\"https://www.moneypot.com/users/"+json[index].uname+"\">"+json[index].uname+"</a></b>: <span style=\"color: #E74C3C\">"+(parseFloat(json[index].wager/100).formatMoney(2,'.',','))+"</span> Bits! <div class=\"info\"><a href=\"https://www.moneypot.com/bets/"+json[index].id+"\" target=\"_blank\"><i class=\"info circle icon\"></i></a></div></div>"+$('#highRoller_logs').html());
+                                $('#highRoller_logs').html("<div class=\"hr_log_item\" style=\"border-left: 4px solid #E74C3C;\"><b><a class=\"hr_log_item_username\" href=\"https://www.moneypot.com/users/"+json[index].uname+"\">"+json[index].uname+"</a></b>: <span style=\"color: #E74C3C\">"+(parseFloat(json[index].wager/100).formatMoney(2,'.',','))+"</span> Bits!"+$('#highRoller_logs').html());
                             }else{
-                                $('#highRoller_logs').html("<div class=\"hr_log_item\" style=\"border-left: 4px solid #8D4;\"><b><a class=\"hr_log_item_username\" href=\"https://www.moneypot.com/users/"+json[index].uname+"\">"+json[index].uname+"</a></b>: <span style=\"color: #8D4\">"+(parseFloat(json[index].wager/100).formatMoney(2,'.',','))+"</span> Bits! <div class=\"info\"><a href=\"https://www.moneypot.com/bets/"+json[index].id+"\" target=\"_blank\"><i class=\"info circle icon\"></i></a></div></div>"+$('#highRoller_logs').html());
+                                $('#highRoller_logs').html("<div class=\"hr_log_item\" style=\"border-left: 4px solid #8D4;\"><b><a class=\"hr_log_item_username\" href=\"https://www.moneypot.com/users/"+json[index].uname+"\">"+json[index].uname+"</a></b>: <span style=\"color: #8D4\">"+(parseFloat(json[index].wager/100).formatMoney(2,'.',','))+"</span> Bits!</div>"+$('#highRoller_logs').html());
                             }
 
                             $('.hr_log_item').each(function(index){
