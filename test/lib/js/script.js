@@ -527,7 +527,7 @@ $('#withdrawButton').click(function() {
 
 function onloadCallback() {
     grecaptcha.render('faucetClaimCaptcha', {
-        'sitekey' : '6LcFXR8TAAAAAL0DIqGJBNhrtul2kwY-Z6lUhEjm',
+        'sitekey' : '6LcKISITAAAAAIBd5J8ypggJhPVFdlsybtWdVScn',
         'callback' : correctCaptcha
     });
 };
