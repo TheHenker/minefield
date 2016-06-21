@@ -5,10 +5,16 @@
 }
 
 html, body{
+    width: 100%;
+    height: 100%;
     min-width: 1000px;
     padding: 0;
     margin: 0;
-    background-color: #000000;
+    background-image: url("http://images.123hdwallpapers.com/20150929/simple-background-pattern-dark-1366x768.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #cccccc;
     overflow-x: hidden;
     color: #cccccc;
 }
@@ -33,9 +39,9 @@ a{
 
 #logo{
     margin: 15px auto;
-    width: 200px;
-    height: 90px;
-    background: url(http://mines.bitcoinshare.xyz/lib/img/logo_200px.png) no-repeat;
+    width: 250px;
+    height: 40px;
+    background: url(img/logo.png) no-repeat;
 }
 
 #startNewGameButton, #connectButton, #cashoutButton, #playAgainButton{
@@ -285,7 +291,7 @@ a{
 /************************************************/
 #game_container{
     width: 1000px;
-    margin: 0px auto;
+    margin: 80px auto;
     position: relative;
 }
 
@@ -298,7 +304,7 @@ a{
 }
 
 #highRoller_log{
-    width: 250px;
+    width: 310px;
     height: 310px;
     position: absolute;
     top: 150px;
@@ -309,7 +315,7 @@ a{
 }
 
 #highRoller_log .title{
-    width: 65%;
+    width: 100%;
     height: 43px;
     line-height: 50px;
     padding-bottom: 10px;
@@ -321,7 +327,7 @@ a{
 
 #highRoller_logs .hr_log_item{
     height: 20px;
-    width: 202px;
+    width: 310px;
     margin-top: 2px;
     padding-left: 5px;
     line-height: 20px;
