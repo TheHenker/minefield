@@ -10,9 +10,13 @@ html, body{
     min-width: 1000px;
     padding: 0;
     margin: 0;
-    background-color: #002;
+    background-image: url("http://images.123hdwallpapers.com/20150929/simple-background-pattern-dark-1366x768.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #cccccc;
     overflow-x: hidden;
-    color: #fff;
+    color: #cccccc;
 }
 
 a{
@@ -36,8 +40,8 @@ a{
 #logo{
     margin: 15px auto;
     width: 250px;
-    height: 90px;
-    background: url(/lib/img/logo_200px.png) no-repeat;
+    height: 40px;
+    background: url(img/logo.png) no-repeat;
 }
 
 #startNewGameButton, #connectButton, #cashoutButton, #playAgainButton{
@@ -116,7 +120,6 @@ a{
     font-family: sans-serif;
     font-size: 12px;
     word-wrap: break-word;
-    color: #fff;
 }
 
 .chatMessage small{
@@ -125,7 +128,7 @@ a{
 }
 
 #chat{
-    background: url(/lib/img/chat-background.png) no-repeat;
+    background: url(img/chat_bg1.png) no-repeat;
     width: 450px;
     height: 250px;
     
@@ -288,7 +291,7 @@ a{
 /************************************************/
 #game_container{
     width: 1000px;
-    margin: 20px auto;
+    margin: 80px auto;
     position: relative;
 }
 
@@ -302,7 +305,7 @@ a{
 
 #highRoller_log{
     width: 310px;
-    height: 320px;
+    height: 310px;
     position: absolute;
     top: 150px;
     left: calc(25% - 200px);
@@ -312,7 +315,7 @@ a{
 }
 
 #highRoller_log .title{
-    width: 65%;
+    width: 100%;
     height: 43px;
     line-height: 50px;
     padding-bottom: 10px;
@@ -324,7 +327,7 @@ a{
 
 #highRoller_logs .hr_log_item{
     height: 20px;
-    width: 202px;
+    width: 310px;
     margin-top: 2px;
     padding-left: 5px;
     line-height: 20px;
@@ -648,52 +651,53 @@ a{
     font-weight: 600;
 }
 
-#game_allbets_log{
-    margin-top: 30px;
-    width: 781px;
-    float: right;
+#game_allbets_log, #game_mybets_log{
+    top: 480px;
+    width: 680px;
+    position: absolute;
+    left: calc(50% - 180px);
 }
 
-#game_allbets_log table{
+#game_mybets_log{
+    display: none;
+}
+
+#game_allbets_log table, #game_mybets_log table{
     background-color: transparent;
 }
-		
-#game_allbets_log table tr{		
+
+#game_allbets_log table tr, #game_mybets_log table tr{
     padding-top: 0px !important;
 }
-#game_allbets_log thead tr th{
-    background: #444;
-    color: #fff;
-    border: 1px solid #666;
-    border-top-color: #777;
-    border-right-color: #111;
-    border-bottom: 2px solid #1a1a1a;
-    -moz-box-shadow: 0 .1em .1em #000;
-    -webkit-box-shadow: 0 .1em .1em #000;
-    -o-box-shadow: 0 .1em .1em #000;
-    box-shadow: 0 .1em .1em #000;
+
+#game_allbets_log thead tr th, #game_mybets_log thead tr th{
+    width: 320px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    color: white;
+    font-size: 20px;
+    white-space: nowrap;
+    background: transparent;
+    padding: 0;
 }
 
-#game_allbets_log tbody tr td{
-    background: #333;
-    -moz-box-shadow: 0 1px 2px #000;
-    -webkit-box-shadow: 0 1px 2px #000;
-    box-shadow: 0 1px 2px #000;
-    border: 1px solid #444;
-    border-bottom-color: #111;
-    border-top-color: #555;
+#game_allbets_log tbody tr td, #game_mybets_log tbody tr td{
+    height: 26px;
+    padding: 0 0 0 10px;
     color: #fff;
 }
 
-#game_allbets_log tbody tr td a{
+#game_allbets_log tbody tr td a, #game_mybets_log tbody tr td a{
+    font-weight: bold;
     color: white;
 }
 
-#game_allbets_log tbody tr td.win{
+#game_allbets_log tbody tr td.win, #game_mybets_log tbody tr td.win{
     border-left: 4px solid #8D4;
 }
 
-#game_allbets_log tbody tr td.lose{
+#game_allbets_log tbody tr td.lose, #game_mybets_log tbody tr td.lose{
     border-left: 4px solid #E74C3C;
 }
 
